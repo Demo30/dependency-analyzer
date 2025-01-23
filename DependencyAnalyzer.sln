@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyAnalyzer", "DependencyAnalyzer\DependencyAnalyzer.csproj", "{904ABEE0-0659-4E8E-B80E-A3874ECD3F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{BEA694AD-233D-48BE-BCAA-D00355389C5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{904ABEE0-0659-4E8E-B80E-A3874ECD3F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904ABEE0-0659-4E8E-B80E-A3874ECD3F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904ABEE0-0659-4E8E-B80E-A3874ECD3F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904ABEE0-0659-4E8E-B80E-A3874ECD3F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA694AD-233D-48BE-BCAA-D00355389C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA694AD-233D-48BE-BCAA-D00355389C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA694AD-233D-48BE-BCAA-D00355389C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA694AD-233D-48BE-BCAA-D00355389C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
