@@ -28,5 +28,29 @@
     - framework contraint used in .nuspec to load matching dependency definitions
   - output=C:\MyResult.json
     - where the resulting analysis report (json file) will get generated
-    
 
+  # Sample result
+
+```
+  {
+    "AnalyzedPackages": [
+        {
+        "Id": "bc9686_TransitiveDependency_A",
+        "Version": "1.0.0",
+        "VersionExpectedByParent": null,
+        "AnalysisResult": "[OK] No expectation",
+        "ChildrenSourceInfo": "Children loaded from source (Nuspec source).",
+        "Children": [
+          {
+            "Id": "bc9686_SecondLevelTransitiveDependency",
+            "Version": "2.0.0",
+            "VersionExpectedByParent": "1.0.0",
+            "AnalysisResult": "[WARN] Resolved version: 2.0.0 is within expectation [1.0.0,) but differs in major version.",
+            "ChildrenSourceInfo": "Max depth reached",
+            "Children": []
+          }
+        ]
+      },
+    ]
+  }
+```
