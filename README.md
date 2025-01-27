@@ -18,18 +18,7 @@
 - But since Second level dependency is backward incompatible between versions, this results in runtime crash for Direct dependency A calls (or just some of them).
 - The tool analysis result issues a warning that the Second level dependency was resolved to a different version then the precise version constriant and that the final version differs by a major version number.
 
-# Usage
-- Following arguments need to be supplied to the console executable:
-  - nuget-cache=C:\Users\some_user\.nuget\packages
-    - where packages are cached after nuget restore
-  - depsjson="C:\repositories\myRepo\myProject\bin\....\MyProject.deps.json"
-    - path to the generated deps.json file containing list of the resolved packages
-  - target-framework=net9.0
-    - framework contraint used in .nuspec to load matching dependency definitions
-  - output=C:\MyResult.json
-    - where the resulting analysis report (json file) will get generated
-
-# Sample result
+## Sample result
 
 ```
   {
@@ -54,3 +43,15 @@
     ]
   }
 ```
+
+# Usage
+- Following arguments need to be supplied to the console executable:
+  - nuget-cache=C:\Users\some_user\.nuget\packages
+    - where packages are cached after nuget restore
+  - depsjson="C:\repositories\myRepo\myProject\bin\....\MyProject.deps.json"
+    - path to the generated deps.json file containing list of the resolved packages
+  - target-framework=net9.0
+    - framework contraint used in .nuspec to load matching dependency definitions
+  - output=C:\MyResult.json
+    - where the resulting analysis report (json file) will get generated
+
