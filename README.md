@@ -11,14 +11,14 @@
   - The analyzer goes through the list of resolved packages and attempts to compare these with the constraints defined by each of these packages.
     - The constraints are retrieved from .nuspec files of each of the dependencies and these are retrieved from the local nuget package cache on the local filesystem path.
  
- # Example of tools functionality
+# Example of tools functionality
 - We have a Main project, Direct dependency A, Direct dependency B and these both reference Second level dependency
 - Direct dependency A uses loose version contraint "1.0.0" and the Direct dependency B requests version "2.0.0" of the Second level dependency in its version constraint.
 - This results in Second level dependency being resolved to "2.0.0" and the Direct dependency A is now using this version of the package.
 - But since Second level dependency is backward incompatible between versions, this results in runtime crash for Direct dependency A calls (or just some of them).
 - The tool analysis result issues a warning that the Second level dependency was resolved to a different version then the precise version constriant and that the final version differs by a major version number.
 
- # Usage
+# Usage
 - Following arguments need to be supplied to the console executable:
   - nuget-cache=C:\Users\some_user\.nuget\packages
     - where packages are cached after nuget restore
@@ -29,7 +29,7 @@
   - output=C:\MyResult.json
     - where the resulting analysis report (json file) will get generated
 
-  # Sample result
+# Sample result
 
 ```
   {
