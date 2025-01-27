@@ -1,6 +1,7 @@
 # Motivation
 - Many libraries use loose version constraints in their dependency definitions (such as "1.0.0" translating to ">= 2.0.0") and when such dependencies happen to be involved in the diamond dependency situation, this may result in silent version upgrade of the transitive dependency.
-- Such an upgrade may very realisticly then result in binary incompatibility which may manifest in the devilish manner by crashing only in runtime, only during specific method call or even when special execution path is taken.
+- Such an upgrade may very realistically result in binary incompatibility which may manifest in the devilish manner by crashing only in runtime, only during specific method call or even when special execution path is taken.
+  - see locally reproducible scenario [in the related repository](https://github.com/Demo30/deps-in-dotnet/tree/scenario/bc9686)
 - This tool attempts to give some more clarity (and therefore control) regarding what package version was resolved against which version constraint and provide the developer with warnings in cases of suspicious or potentially problematic version resolutions.
 
 # Implementation
